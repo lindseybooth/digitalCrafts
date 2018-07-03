@@ -26,13 +26,13 @@ class Hero:
         self.power = power
         print(self.health,self.power)
 
-    # def attack(self, goblin):
-    #     # Hero attacks goblin
-    #     goblin.health -= self.power
-    #     if goblin.health <= 0:
-    #         print("The goblin is dead.")
-    #     else:
-    #         print("The hero does {} damage to the goblin.".format(hero.power)
+    def attack(self, goblin):
+        # Hero attacks goblin
+        goblin.health -= self.power
+        if goblin.health <= 0:
+            print("The goblin is dead.")
+        else:
+            print("The hero does {} damage to the goblin.".format(hero.power)
         
 # goblin = Goblin(10,2)
 # hero = Hero(10, 4)
