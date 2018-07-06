@@ -80,27 +80,28 @@ class Goblin(Character):
         self.name = "Goblin"
         self.bounty = 5
 
+class Zombie(Character):
+    def __init__ (self, health, power):
+        super().__init__(health, power)
+        self.name = "Zombie"
+
 class Medic(Character):
     def __init__ (self, health, power):
         super().__init__(health, power)
         self.name = "Medic"
 
-class Shadow(Character):
-    def __init__ (self, health, power):
-        super().__init__(health, power)
-        self.name = "Shadow"
-        self.bounty = 2
-
-class Zombie(Character):
-    def __init__ (self, health, power):
-        super().__init__(health, power)
-        self.name = "Zombie"
 
 class Ogre(Character):
     def __init__ (self, health, power):
         super().__init__(health, power)
         self.name = "Ogre"
         self.bounty = 8
+
+class Shadow(Character):
+    def __init__ (self, health, power):
+        super().__init__(health, power)
+        self.name = "Shadow"
+        self.bounty = 2
 
 class Tonic:
     cost = 5
